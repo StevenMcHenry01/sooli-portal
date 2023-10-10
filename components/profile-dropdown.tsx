@@ -50,14 +50,14 @@ export function ProfileDropdown() {
             {profile.avatarUrl ? (
               <Image
                 alt="Profile picture"
-                className="rounded-full ml-2"
+                className="ml-2 rounded-full"
                 width={24}
                 height={24}
                 src={profile?.avatarUrl || User}
               />
             ) : (
-              <div className="rounded-full ml-2 h-6 w-6 bg-gray-300 grid place-content-center">
-                <User className="h-5 w-5 text-gray-500 center" />
+              <div className="ml-2 grid h-6 w-6 place-content-center rounded-full bg-gray-300">
+                <User className="center h-5 w-5 text-gray-500" />
               </div>
             )}
           </Button>

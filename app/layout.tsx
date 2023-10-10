@@ -19,12 +19,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="min-h-screen bg-background flex flex-col p-5">
-            <nav className="flex justify-between w-full">
+          <main className="flex min-h-screen flex-col bg-background p-5">
+            <nav className="flex w-full justify-between">
               <Link href="/">
                 <Button variant="outline">Dashboard</Button>
               </Link>
-              <div className="ml-auto flex align-items-center gap-5">
+              <div className="align-items-center ml-auto flex gap-5">
                 <ProfileDropdown />
                 <ModeToggle />
               </div>
